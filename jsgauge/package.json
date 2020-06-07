@@ -1,0 +1,23 @@
+{
+  "name": "gauge-taiko-template",
+  "version": "0.0.1",
+  "description": "Starter template for writing JavaScript tests for Gauge",
+  "scripts": {
+    "test": "del /q tests && npx babel src/tests -d tests && gauge run specs/",
+    "build": "del /q tests && npx babel src/tests -d tests"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "taiko": "latest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.1",
+    "@babel/preset-env": "^7.10.2"
+  }
+}
