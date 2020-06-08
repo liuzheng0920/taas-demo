@@ -3,7 +3,7 @@ import  util from 'util'
 
 const execInstance = util.promisify(exec);
 
-var cellGaugeByLocal = async function () {
+var executeTest = async function () {
     let cmd = "npm test"
     let path = 'cd ../jsgauge/'
     let options = {
@@ -14,13 +14,9 @@ var cellGaugeByLocal = async function () {
         cwd: null,
         env: null
     };
-
     const  { error,stdout, stderr } =  await execInstance(`${path}　&& ${cmd} `, options);
-    if(error){
-        return stderr
-    }else{
-        return stdout
-    }
+
+    return error?stderr:stdout
 
 }
-export  default cellGaugeByLocal
+export  default executeTest

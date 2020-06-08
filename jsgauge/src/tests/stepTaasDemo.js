@@ -1,6 +1,6 @@
 'use strict';
 
-import  fetch from './fetchclient'
+import  fetch from './util/fetchclient'
 import assert from 'assert';
 const  data = {username: "liuzheng",password: "123456"}
 

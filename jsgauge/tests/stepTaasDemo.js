@@ -1,6 +1,6 @@
 'use strict';
 
-var _fetchclient = _interopRequireDefault(require("./fetchclient"));
+var _fetchclient = _interopRequireDefault(require("./util/fetchclient"));
 
 var _assert = _interopRequireDefault(require("assert"));
 

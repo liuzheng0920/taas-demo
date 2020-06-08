@@ -1,5 +1,5 @@
 import Router from "@koa/router";
-import cellGaugeByLocal from '../service/callGaugeTest'
+import executeTest from '../service/executeTest'
 
 const router = new Router();
 
@@ -7,8 +7,8 @@ router.get("/hello",ctx =>{
     ctx.body="hello"
 })
 
-router.get("/testgage",async ctx =>{
-    const result = await cellGaugeByLocal()
+router.get("/testgauge",async ctx =>{
+    const result = await executeTest()
     ctx.response.body = result
 })
 
