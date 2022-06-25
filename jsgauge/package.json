@@ -7,7 +7,7 @@
     "build": "del /q tests && npx babel src/tests -d tests"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "taiko": "latest"
   },
   "devDependencies": {
